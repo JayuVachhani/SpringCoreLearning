@@ -1,5 +1,7 @@
 package com.springcore.stereotyannotation08;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +13,18 @@ public class Student {
 	private String name;
 	@Value("Mumbai")
 	private String city;
+	
+//	it will get ref of util-list element and inject properties
+	@Value("#{pno}")
+	private List<Integer> phoneno;
+	
+	
+	public List<Integer> getPhoneno() {
+		return phoneno;
+	}
+	public void setPhoneno(List<Integer> phoneno) {
+		this.phoneno = phoneno;
+	}
 	public String getName() {
 		return name;
 	}
@@ -25,8 +39,9 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", city=" + city + "]";
+		return "Student [name=" + name + ", city=" + city + ", phoneno=" + phoneno + "]";
 	}
+	
 	
 
 }

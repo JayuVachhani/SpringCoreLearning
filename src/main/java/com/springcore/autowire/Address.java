@@ -1,6 +1,6 @@
-package com.springdemo.autowire;
+package com.springcore.autowire;
 
-public class Address1 {
+public class Address {
 	private String state;
 	private String country;
 	public String getState() {
@@ -15,17 +15,20 @@ public class Address1 {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public Address1() {
+	public Address() {
 		super();
 	}
-	public Address1(String state, String country) {
+	public Address(String state, String country) {
 		super();
 		this.state = state;
 		this.country = country;
 	}
 	@Override
 	public String toString() {
-		return "Address1 [state=" + state + ", country=" + country + "]";
+		return "Address [state=" + state + ", country=" + country + "]";
 	}
+	
+	
+	
 
 }

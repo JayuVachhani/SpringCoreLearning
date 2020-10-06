@@ -1,4 +1,4 @@
-package com.springdemo.autowire;
+package com.springcore.autowire;
 
 import org.springframework.context.ApplicationContext;
 
@@ -11,7 +11,7 @@ public class Test {
 		//here we use AbstractApplicationContext to get access of lifecycle hooks
 //			registerShutdownHook will call destroy method
 			
-		ApplicationContext context = new  ClassPathXmlApplicationContext("com/springdemo/autowire/autowire.xml");
+		ApplicationContext context = new  ClassPathXmlApplicationContext("com/springcore/autowire/autowire.xml");
 		
 		Employee e = (Employee)context.getBean("emp");
 		System.out.println(e);	

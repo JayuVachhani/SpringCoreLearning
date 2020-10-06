@@ -14,7 +14,7 @@
 	<context:annotation-config /> 
 	       
         
-        <bean class="com.springdemo.autowire.Address" name="address">
+        <bean class="com.springcore.autowire.Address" name="address">
         	<property name="state" value="Delhi" />
         	<property name="country" value="India" />
         </bean>
@@ -24,20 +24,20 @@
         
         <!-- annotation -->
         
-        <bean class="com.springdemo.autowire.Employee" name="emp" autowire="byName" />
+        <bean class="com.springcore.autowire.Employee" name="emp" autowire="byName" />
         <!-- it will check type (class) -->
-       <!--  <bean class="com.springdemo.autowire.Employee" name="emp" autowire="byType" />
+       <!--  <bean class="com.springcore.autowire.Employee" name="emp" autowire="byType" />
        
-        <bean class="com.springdemo.autowire.Employee" name="emp" autowire="constructor" />
+        <bean class="com.springcore.autowire.Employee" name="emp" autowire="constructor" />
            -->
           
-          <bean class="com.springdemo.autowire.Address1" name="address1">
+          <bean class="com.springcore.autowire.Address1" name="address1">
         	<property name="state" value="Pune" />
         	<property name="country" value="Maharastra" />
         </bean> 
-           <bean class="com.springdemo.autowire.Address1" name="address11">
+           <bean class="com.springcore.autowire.Address1" name="address11">
         	<property name="state" value="Delhiggggggggg" />
         	<property name="country" value="Indiassssssssssssss" />
         </bean>  
-        <bean class="com.springdemo.autowire.Emploee1" name="emp1" />
+        <bean class="com.springcore.autowire.Emploee1" name="emp1" />
 </beans>

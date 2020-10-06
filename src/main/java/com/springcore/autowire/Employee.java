@@ -1,4 +1,4 @@
-package com.springdemo.autowire;
+package com.springcore.autowire;
 
 public class Employee {
 	private Address address;

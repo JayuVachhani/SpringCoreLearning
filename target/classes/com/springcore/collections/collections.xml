@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    
+    http://www.springframework.org/schema/context
+    
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+        <!-- bean object -->
+        <!-- IOC container converts this xml configuration to object for the Student class
+        with the reference of student id setter injection -->
+        <bean id="collestudent" class="com.springcore.collections.Student">
+        <property name="name" value="Jay" />
+        <property name="phoneno" >
+        	<list>
+        		<value>123</value>
+        		<value>456</value>
+        		<value>789</value>
+        	</list>
+        </property>
+        <property name="addresses">
+        	<set>
+        		<value>abc</value>
+        		<value>123abc</value>
+        		<value>123vfdgdfg</value>
+        		<value>123esfseerdfgfdgfdg</value>      		
+        	</set>        
+        </property>
+        <property name="courses">
+        	<map>
+        		<entry key="JAVA" value="5 Months"/>
+        		<entry key="Python" value="2 Months"/>
+        	</map>
+        </property>
+        	
+        </bean>
+        
+</beans>
